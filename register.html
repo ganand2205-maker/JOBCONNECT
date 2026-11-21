@@ -1,0 +1,655 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect - Register / Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <div class="logo-icon">JC</div>
+        <div class="logo-name">Job<span>Connect</span></div>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="register.html">Register / Login</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<div class="registration-container">
+
+    <h1>Welcome to JobConnect</h1>
+    <p class="subtitle">Create your account and find your dream job!</p>
+
+    <div class="form-tabs">
+        <button type="button" id="registerTab"
+                class="active" onclick="showRegister()">
+            Register
+        </button>
+
+        <button type="button" id="loginTab"
+                onclick="showLogin()">
+            Login
+        </button>
+    </div> -->
+
+    <!-- REGISTRATION SECTION -->
+
+   <!-- <section id="registerSection" class="form-section active">
+
+        <h2>1. Personal Information</h2>
+
+        <form id="registrationForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" name="fullName"
+                           placeholder="Enter full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" name="email"
+                           placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile Number *</label>
+                    <input type="tel" name="phone"
+                           placeholder="10 digit mobile number"
+                           pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option value="">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Current Location *</label>
+                    <input type="text" name="location"
+                           placeholder="Enter your city" required>
+                </div>
+
+            </div>
+
+            <h2>2. Educational Details</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Highest Qualification *</label>
+                    <select name="qualification" required>
+                        <option value="">Select Qualification</option>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Diploma</option>
+                        <option>UG</option>
+                        <option>PG</option>
+                        <option>PhD</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Degree / Course Name *</label>
+                    <input type="text" name="degree"
+                           placeholder="B.Sc Computer Science" required>
+                </div>
+
+                <div class="form-group">
+                    <label>College / University</label>
+                    <input type="text" name="college"
+                           placeholder="Enter college name">
+                </div>
+
+                <div class="form-group">
+                    <label>Year of Passing</label>
+                    <input type="number" name="passingYear"
+                           placeholder="2025" min="1950" max="2035">
+                </div>
+
+                <div class="form-group">
+                    <label>Percentage / CGPA</label>
+                    <input type="text" name="percentage"
+                           placeholder="85% or 8.5 CGPA">
+                </div>
+
+            </div>
+
+            <h2>3. Professional Details</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Employment Status *</label>
+                    <select name="employment" required>
+                        <option value="">Select Status</option>
+                        <option>Fresher</option>
+                        <option>Experienced</option>
+                        <option>Currently Working</option>
+                        <option>Intern</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Total Experience *</label>
+                    <select name="experience" required>
+                        <option value="">Select Experience</option>
+                        <option>Fresher</option>
+                        <option>Less than 1 year</option>
+                        <option>1-2 years</option>
+                        <option>3-5 years</option>
+                        <option>5-10 years</option>
+                        <option>Above 10 years</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Previous / Current Company</label>
+                    <input type="text" name="company"
+                           placeholder="Company name">
+                </div>
+
+                <div class="form-group">
+                    <label>Previous / Current Job Role</label>
+                    <input type="text" name="jobRole"
+                           placeholder="Software Developer">
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Technical / Professional Skills *</label>
+                    <textarea name="skills"
+                              placeholder="HTML, CSS, JavaScript, Python..."
+                              required></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Upload Resume (PDF, DOC, DOCX) *</label>
+                    <input type="file" name="resume" id="resume"
+                           accept=".pdf,.doc,.docx" required>
+                </div>
+
+            </div>
+
+            <h2>4. Job Preferences</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Preferred Job Role *</label>
+                    <input type="text" name="preferredRole"
+                           placeholder="Web Developer" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Job Location *</label>
+                    <input type="text" name="preferredLocation"
+                           placeholder="Chennai, Bangalore..." required>
+                </div>
+
+                <div class="form-group">
+                    <label>Expected Salary (Annual)</label>
+                    <input type="number" name="salary"
+                           placeholder="Expected salary" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label>Job Type *</label>
+                    <select name="jobType" required>
+                        <option value="">Select Job Type</option>
+                        <option>Full Time</option>
+                        <option>Part Time</option>
+                        <option>Internship</option>
+                        <option>Freelance</option>
+                        <option>Contract</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Work Mode</label>
+                    <select name="workMode">
+                        <option value="">Select Work Mode</option>
+                        <option>Work From Office</option>
+                        <option>Work From Home</option>
+                        <option>Hybrid</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Notice Period</label>
+                    <select name="noticePeriod">
+                        <option value="">Select Notice Period</option>
+                        <option>Immediately Available</option>
+                        <option>15 Days</option>
+                        <option>30 Days</option>
+                        <option>60 Days</option>
+                        <option>90 Days</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <h2>5. Account Security</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Password *</label>
+                    <input type="password" id="password"
+                           name="password"
+                           placeholder="Create password"
+                           minlength="8" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Confirm Password *</label>
+                    <input type="password" id="confirmPassword"
+                           placeholder="Confirm password" required>
+                </div>
+
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">
+                    I agree to the Terms and Conditions and Privacy Policy.
+                </label>
+            </div>
+
+            <button type="submit">Create Account</button>
+
+            <p class="message" id="registerMessage"></p>
+
+            <p class="switch-link">
+                Already have an account?
+                <a href="#" onclick="showLogin(); return false;">Login Here</a>
+            </p>
+
+        </form>
+    </section> -->
+
+
+    <!-- LOGIN SECTION -->
+
+    <!-- <section id="loginSection" class="form-section">
+
+        <div class="login-logo">JC</div>
+
+        <h2>Job Seeker Login</h2>
+
+        <p class="subtitle">Login to explore job opportunities.</p>
+
+        <form id="loginForm">
+
+            <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" id="loginEmail"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Password *</label>
+                <input type="password" id="loginPassword"
+                       placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <p class="message" id="loginMessage"></p>
+
+            <p class="switch-link">
+                Don't have an account?
+                <a href="#" onclick="showRegister(); return false;">
+                    Register Here
+                </a>
+            </p>
+
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 JobConnect. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect - Register / Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <div class="logo-icon">JC</div>
+        <div class="logo-name">Job<span>Connect</span></div>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="register.html">Register / Login</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<div class="registration-container">
+
+    <h1>Welcome to JobConnect</h1>
+    <p class="subtitle">Create your account and find your dream job!</p>
+
+    <div class="form-tabs">
+
+        <button type="button" id="registerTab" class="active" onclick="showRegister()">
+            Register
+        </button>
+
+        <button type="button" id="loginTab" onclick="showLogin()">
+            Login
+        </button>
+
+    </div>
+
+    <!-- REGISTRATION -->
+
+    <section id="registerSection" class="form-section active">
+
+        <h2>1. Personal Information</h2>
+
+        <form id="registrationForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" name="fullName" placeholder="Enter full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile Number *</label>
+                    <input type="tel" name="phone" placeholder="10 digit mobile number" pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option value="">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Current Location *</label>
+                    <input type="text" name="location" placeholder="Enter your city" required>
+                </div>
+
+            </div>
+
+            <h2>2. Educational Details</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Highest Qualification *</label>
+                    <select name="qualification" required>
+                        <option value="">Select Qualification</option>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Diploma</option>
+                        <option>UG</option>
+                        <option>PG</option>
+                        <option>PhD</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Degree / Course Name *</label>
+                    <input type="text" name="degree" placeholder="B.Sc Computer Science" required>
+                </div>
+
+                <div class="form-group">
+                    <label>College / University</label>
+                    <input type="text" name="college" placeholder="Enter college name">
+                </div>
+
+                <div class="form-group">
+                    <label>Year of Passing</label>
+                    <input type="number" name="passingYear" placeholder="2025" min="1950" max="2035">
+                </div>
+
+                <div class="form-group">
+                    <label>Percentage / CGPA</label>
+                    <input type="text" name="percentage" placeholder="85% or 8.5 CGPA">
+                </div>
+
+            </div>
+
+            <h2>3. Professional Details</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Employment Status *</label>
+                    <select name="employment" required>
+                        <option value="">Select Status</option>
+                        <option>Fresher</option>
+                        <option>Experienced</option>
+                        <option>Currently Working</option>
+                        <option>Intern</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Total Experience *</label>
+                    <select name="experience" required>
+                        <option value="">Select Experience</option>
+                        <option>Fresher</option>
+                        <option>Less than 1 year</option>
+                        <option>1-2 years</option>
+                        <option>3-5 years</option>
+                        <option>5-10 years</option>
+                        <option>Above 10 years</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Previous / Current Company</label>
+                    <input type="text" name="company" placeholder="Company name">
+                </div>
+
+                <div class="form-group">
+                    <label>Previous / Current Job Role</label>
+                    <input type="text" name="jobRole" placeholder="Software Developer">
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Technical / Professional Skills *</label>
+                    <textarea name="skills" placeholder="HTML, CSS, JavaScript, Python..." required></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Upload Resume (PDF, DOC, DOCX) *</label>
+                    <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+
+            </div>
+
+            <h2>4. Job Preferences</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Preferred Job Role *</label>
+                    <input type="text" name="preferredRole" placeholder="Web Developer" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Job Location *</label>
+                    <input type="text" name="preferredLocation" placeholder="Chennai, Bangalore..." required>
+                </div>
+
+                <div class="form-group">
+                    <label>Expected Salary (Annual)</label>
+                    <input type="number" name="salary" placeholder="Expected salary" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label>Job Type *</label>
+                    <select name="jobType" required>
+                        <option value="">Select Job Type</option>
+                        <option>Full Time</option>
+                        <option>Part Time</option>
+                        <option>Internship</option>
+                        <option>Freelance</option>
+                        <option>Contract</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Work Mode</label>
+                    <select name="workMode">
+                        <option value="">Select Work Mode</option>
+                        <option>Work From Office</option>
+                        <option>Work From Home</option>
+                        <option>Hybrid</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Notice Period</label>
+                    <select name="noticePeriod">
+                        <option value="">Select Notice Period</option>
+                        <option>Immediately Available</option>
+                        <option>15 Days</option>
+                        <option>30 Days</option>
+                        <option>60 Days</option>
+                        <option>90 Days</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <h2>5. Account Security</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Password *</label>
+                    <input type="password" id="password" name="password" placeholder="Create password" minlength="8" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Confirm Password *</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                </div>
+
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">
+                    I agree to the Terms and Conditions and Privacy Policy.
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Create Account</button>
+
+            <p class="message" id="registerMessage"></p>
+
+            <p class="switch-link">
+                Already have an account?
+                <a href="#" onclick="showLogin(); return false;">Login Here</a>
+            </p>
+
+        </form>
+    </section>
+
+    <!-- LOGIN -->
+
+    <section id="loginSection" class="form-section">
+
+        <div class="login-logo">JC</div>
+
+        <h2>Job Seeker Login</h2>
+
+        <p class="subtitle">Login to explore job opportunities.</p>
+
+        <form id="loginForm">
+
+            <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Password *</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button>
+
+            <p class="message" id="loginMessage"></p>
+
+            <p class="switch-link">
+                Don't have an account?
+                <a href="#" onclick="showRegister(); return false;">Register Here</a>
+            </p>
+
+        </form>
+
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 JobConnect. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

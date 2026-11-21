@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect - Available Jobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <div class="logo-icon">JC</div>
+        <div class="logo-name">Job<span>Connect</span></div>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="register.html">Register / Login</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Find Your Perfect Job</h1>
+        <p>Search and explore the latest job opportunities.</p>
+
+        <div class="search-box">
+            <input type="text" id="jobSearch"
+                   placeholder="Search job title..."
+                   oninput="filterJobs()">
+        </div>
+    </div>
+</section>
+
+<section class="container">
+
+    <h2>Available Job Opportunities</h2>
+
+    <div class="cards">
+
+        <div class="card job-card">
+            <h3>Java Developer</h3>
+            <p><strong>Company:</strong> ABC Technologies</p>
+            <p><strong>Location:</strong> Chennai</p>
+            <p><strong>Salary:</strong> ₹25,000 - ₹40,000</p>
+            <p><strong>Experience:</strong> 0-2 Years</p>
+            <p><strong>Type:</strong> Full Time</p>
+            <a href="register.html" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="card job-card">
+            <h3>Python Developer</h3>
+            <p><strong>Company:</strong> Tech Solutions</p>
+            <p><strong>Location:</strong> Madurai</p>
+            <p><strong>Salary:</strong> ₹20,000 - ₹35,000</p>
+            <p><strong>Experience:</strong> Fresher</p>
+            <p><strong>Type:</strong> Full Time</p>
+            <a href="register.html" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="card job-card">
+            <h3>Web Developer</h3>
+            <p><strong>Company:</strong> Digital World</p>
+            <p><strong>Location:</strong> Chennai</p>
+            <p><strong>Salary:</strong> ₹18,000 - ₹30,000</p>
+            <p><strong>Experience:</strong> 0-1 Year</p>
+            <p><strong>Type:</strong> Full Time</p>
+            <a href="register.html" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="card job-card">
+            <h3>Data Analyst</h3>
+            <p><strong>Company:</strong> Data Solutions</p>
+            <p><strong>Location:</strong> Bangalore</p>
+            <p><strong>Salary:</strong> ₹25,000 - ₹45,000</p>
+            <p><strong>Experience:</strong> 1-3 Years</p>
+            <p><strong>Type:</strong> Full Time</p>
+            <a href="register.html" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="card job-card">
+            <h3>Digital Marketing Executive</h3>
+            <p><strong>Company:</strong> Creative Media</p>
+            <p><strong>Location:</strong> Chennai</p>
+            <p><strong>Salary:</strong> ₹15,000 - ₹25,000</p>
+            <p><strong>Experience:</strong> Fresher</p>
+            <p><strong>Type:</strong> Full Time</p>
+            <a href="register.html" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="card job-card">
+            <h3>UI UX Designer</h3>
+            <p><strong>Company:</strong> Design Studio</p>
+            <p><strong>Location:</strong> Coimbatore</p>
+            <p><strong>Salary:</strong> ₹20,000 - ₹35,000</p>
+            <p><strong>Experience:</strong> 1-2 Years</p>
+            <p><strong>Type:</strong> Full Time</p>
+            <a href="register.html" class="apply-btn">Apply Now</a>
+        </div>
+
+    </div>
+
+    <h3 id="noJobs" style="display:none; margin-top:30px;">
+        No jobs found. Try another search.
+    </h3>
+
+</section>
+
+<footer>
+    <p>© 2026 JobConnect. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

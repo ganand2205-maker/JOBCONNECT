@@ -1,0 +1,1333 @@
+<!--
+/* =================================
+   1. GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5fc;
+    color: #333;
+    overflow-x: hidden;
+    animation: pageLoad 0.7s ease-in;
+}
+
+@keyframes pageLoad {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* =================================
+   2. HEADER AND NAVIGATION
+================================= */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #142c54;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 55px;
+    height: 55px;
+    background: #ffcc00;
+    color: #142c54;
+    border: 3px solid white;
+    border-radius: 15px 15px 15px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo-name {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo-name span {
+    color: #ffcc00;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+
+/* =================================
+   3. IMAGE SECTION
+================================= 
+
+.image-section {
+    text-align: center;
+    padding: 35px 20px;
+    background: #eaf0fa;
+}
+
+.image-section h2 {
+    color: #142c54;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.image-section p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.images img:hover {
+    transform: scale(1.08);
+}*/
+
+/* =================================
+   3. CENTERED JOBCONNECT IMAGE
+================================= */
+
+.image-section {
+    text-align: center;
+    padding: 35px 20px;
+    background: #eaf0fa;
+}
+
+.image-section h2 {
+    color: #142c54;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.image-section p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.images img {
+    width: 260px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    border: 3px solid white;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.images img:hover {
+    transform: scale(1.08);
+}
+
+
+/* =================================
+   4. HERO SECTION
+================================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 70px 40px;
+    color: white;
+
+    background: linear-gradient(
+        120deg,
+        #142c54,
+        #2875c7,
+        #4ca1af
+    );
+
+    background-size: 200% 200%;
+    animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-logo {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    border: 6px solid white;
+    border-radius: 30px 30px 30px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+    font-weight: bold;
+    color: #142c54;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transform: rotate(-5deg);
+    transition: 0.4s;
+}
+
+.hero-logo:hover {
+    transform: rotate(0deg) scale(1.1);
+}
+
+.hero-content {
+    max-width: 650px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+
+/* =================================
+   5. SEARCH BOX
+================================= */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 14px;
+    width: 280px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.search-box button {
+    padding: 14px 22px;
+    background: #ffcc00;
+    color: #142c54;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* =================================
+   6. COMMON CONTAINER
+================================= */
+
+.container {
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.container h1,
+.container h2 {
+    color: #142c54;
+    margin-bottom: 25px;
+}
+
+
+/* =================================
+   7. JOB CARDS
+================================= */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 220px;
+    max-width: 350px;
+    text-align: left;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #142c54;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555;
+    margin: 8px 0;
+}
+
+
+/* =================================
+   8. BUTTONS
+================================= */
+
+button,
+.apply-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2875c7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.apply-btn:hover {
+    background: #142c54;
+    color: white;
+}
+
+
+/* =================================
+   9. COMMON FORMS
+================================= */
+
+.form-container,
+.registration-container,
+.login-container {
+    background: white;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h1,
+.registration-container h1,
+.login-container h1 {
+    text-align: center;
+    color: #142c54;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2875c7;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* =================================
+   10. REGISTRATION FORM
+================================= */
+
+.registration-container {
+    max-width: 850px;
+}
+
+.registration-container .subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.registration-container h2 {
+    color: #2875c7;
+    font-size: 19px;
+    margin: 25px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5eaf2;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    margin: 0;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+.message {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch-link a {
+    color: #2875c7;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* =================================
+   11. LOGIN FORM
+================================= */
+
+.login-container {
+    max-width: 450px;
+    text-align: center;
+}
+
+.login-container form {
+    text-align: left;
+}
+
+.login-container label {
+    text-align: left;
+}
+
+.login-container .login-logo {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    background: #ffcc00;
+    color: #142c54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #2875c7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =================================
+   12. ABOUT SECTION
+================================= */
+
+.about {
+    background: white;
+    margin: 40px;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.about h1 {
+    color: #2875c7;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    margin-left: 25px;
+}
+
+
+/* =================================
+   13. FOOTER
+================================= */
+
+footer {
+    background: #142c54;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 25px;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+
+/* =================================
+   14. RESPONSIVE DESIGN
+================================= */
+
+@media(max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-logo {
+        width: 120px;
+        height: 120px;
+        font-size: 45px;
+    }
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .images img {
+        width: 150px;
+        height: 110px;
+    }
+
+    .about {
+        margin: 20px;
+    }
+
+    .form-container,
+    .registration-container,
+    .login-container {
+        margin: 20px;
+        padding: 22px;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .logo-name {
+        font-size: 23px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+}
+
+@media(prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+}-->
+
+
+
+/* =================================
+   1. GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5fc;
+    color: #333;
+    overflow-x: hidden;
+    animation: pageLoad 0.7s ease-in;
+}
+
+@keyframes pageLoad {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* =================================
+   2. HEADER
+================================= */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #142c54;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 55px;
+    height: 55px;
+    background: #ffcc00;
+    color: #142c54;
+    border: 3px solid white;
+    border-radius: 15px 15px 15px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo-name {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo-name span {
+    color: #ffcc00;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+
+/* =================================
+   3. IMAGE SECTION
+================================= */
+
+.image-section {
+    text-align: center;
+    padding: 35px 20px;
+    background: #eaf0fa;
+}
+
+.image-section h2 {
+    color: #142c54;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.image-section p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.images img:hover {
+    transform: scale(1.08);
+}
+
+
+/* =================================
+   4. HERO SECTION
+================================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 70px 40px;
+    color: white;
+    background: linear-gradient(120deg, #142c54, #2875c7, #4ca1af);
+    background-size: 200% 200%;
+    animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-logo {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    border: 6px solid white;
+    border-radius: 30px 30px 30px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+    font-weight: bold;
+    color: #142c54;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transform: rotate(-5deg);
+    transition: 0.4s;
+}
+
+.hero-logo:hover {
+    transform: rotate(0deg) scale(1.1);
+}
+
+.hero-content {
+    max-width: 650px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.welcome-message {
+    color: #ffcc00;
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+
+/* =================================
+   5. SEARCH BOX
+================================= */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 14px;
+    width: 280px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.search-box button {
+    padding: 14px 22px;
+    background: #ffcc00;
+    color: #142c54;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* =================================
+   6. COMMON CONTAINER
+================================= */
+
+.container {
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.container h1,
+.container h2 {
+    color: #142c54;
+    margin-bottom: 25px;
+}
+
+
+/* =================================
+   7. JOB CARDS
+================================= */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 220px;
+    max-width: 350px;
+    text-align: left;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #142c54;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555;
+    margin: 8px 0;
+}
+
+
+/* =================================
+   8. BUTTONS
+================================= */
+
+button,
+.apply-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2875c7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.apply-btn:hover {
+    background: #142c54;
+    color: white;
+}
+
+
+/* =================================
+   9. COMMON FORMS
+================================= */
+
+.form-container,
+.registration-container,
+.login-container {
+    background: white;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h1,
+.registration-container h1,
+.login-container h1 {
+    text-align: center;
+    color: #142c54;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2875c7;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* =================================
+   10. REGISTRATION
+================================= */
+
+.registration-container {
+    max-width: 850px;
+}
+
+.registration-container .subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.registration-container h2 {
+    color: #2875c7;
+    font-size: 19px;
+    margin: 25px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5eaf2;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    margin: 0;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+.checkbox label {
+    font-size: 13px;
+}
+
+.message {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch-link a {
+    color: #2875c7;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* =================================
+   11. REGISTER / LOGIN TABS
+================================= */
+
+.form-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.form-tabs button {
+    min-width: 130px;
+}
+
+.form-tabs button.active {
+    background: #142c54;
+    color: #ffcc00;
+}
+
+.form-section {
+    display: none;
+}
+
+.form-section.active {
+    display: block;
+}
+
+
+/* =================================
+   12. LOGIN
+================================= */
+
+.login-logo {
+    width: 75px;
+    height: 75px;
+    margin: 20px auto;
+    background: #ffcc00;
+    color: #142c54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+
+/* =================================
+   13. ABOUT
+================================= */
+
+.about {
+    background: white;
+    margin: 40px;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.about h1,
+.about h2 {
+    color: #2875c7;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    margin-left: 25px;
+}
+
+
+/* =================================
+   14. CONTACT
+================================= */
+
+.form-container {
+    max-width: 550px;
+}
+
+.form-container form {
+    margin-top: 25px;
+}
+
+.form-container button {
+    width: 100%;
+}
+
+
+/* =================================
+   15. FOOTER
+================================= */
+
+footer {
+    background: #142c54;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 25px;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+
+/* =================================
+   16. RESPONSIVE DESIGN
+================================= */
+
+@media(max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-logo {
+        width: 120px;
+        height: 120px;
+        font-size: 45px;
+    }
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .images img {
+        width: 150px;
+        height: 110px;
+    }
+
+    .about {
+        margin: 20px;
+    }
+
+    .form-container,
+    .registration-container,
+    .login-container {
+        margin: 20px;
+        padding: 22px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .logo-name {
+        font-size: 23px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+

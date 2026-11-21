@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact JobConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <div class="logo-icon">JC</div>
+        <div class="logo-name">Job<span>Connect</span></div>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="register.html">Register / Login</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section class="container">
+
+    <h1>Contact Us</h1>
+    <p>Have questions? We would love to hear from you.</p>
+
+    <div class="form-container">
+
+        <h1>Send Us a Message</h1>
+
+        <form onsubmit="return contactForm()">
+
+            <label>Full Name *</label>
+            <input type="text" id="contactName"
+                   placeholder="Enter your name" required>
+
+            <label>Email Address *</label>
+            <input type="email" id="contactEmail"
+                   placeholder="Enter your email" required>
+
+            <label>Subject *</label>
+            <input type="text" id="contactSubject"
+                   placeholder="Enter subject" required>
+
+            <label>Your Message *</label>
+            <textarea id="contactMessage"
+                      placeholder="Write your message..."
+                      required></textarea>
+
+            <button type="submit">Submit Message</button>
+
+        </form>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3><i class="fa-solid fa-envelope"></i> Email</h3>
+            <p>support@jobconnect.com</p>
+        </div>
+
+        <div class="card">
+            <h3><i class="fa-solid fa-phone"></i> Phone</h3>
+            <p>+91 98765 43210</p>
+        </div>
+
+        <div class="card">
+            <h3><i class="fa-solid fa-location-dot"></i> Location</h3>
+            <p>Chennai, Tamil Nadu, India</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 JobConnect. All Rights Reserved.</p>
+</footer>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="script.js"></script>
+</body>
+</html>
